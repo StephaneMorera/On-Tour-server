@@ -4,7 +4,7 @@ const axios = require("axios");
 const events = async () => {
   await axios
     .get(
-      "https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&dmaId=345&apikey=4q59AYKkZGvG3Z3OzLdf9ehH5J3pprVk"
+      "https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&dmaId=324&apikey=4q59AYKkZGvG3Z3OzLdf9ehH5J3pprVk"
     )
     .then((response) => {
       let events = response.data._embedded.events;
